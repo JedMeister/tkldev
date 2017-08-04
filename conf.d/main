@@ -30,21 +30,20 @@ mkdir -p $FAB_PATH/bootstraps \
          $BUILDTASKS/{isos,builds}
 
 # environmental variables and bash tweaks
-mkdir -p /root/.bashrc.d
+PROFILE_D=/etc/profile.d
+mkdir -p $PROFILE_D
 
-cat >/root/.bashrc.d/fab<<EOF
+cat > $PROFILE_D/fab.sh <<EOF
 export FAB_PATH=$FAB_PATH
 export FAB_HTTP_PROXY=http://127.0.0.1:$PROXY_PORT
 # https proxy must be connected to via http
 export FAB_HTTPS_PROXY=http://127.0.0.1:$PROXY_PORT
 EOF
-chmod +x /root/.bashrc.d/fab
 
-cat >/root/.bashrc.d/turnkey-paths<<EOF
+cat > $PROFILE_D/turnkey-paths.sh <<EOF
 CDPATH=.:$FAB_PATH:/turnkey:$FAB_PATH/products
 export _CDPATH=\$CDPATH
 EOF
-chmod +x /root/.bashrc.d/turnkey-paths
 
 # disable confconsole auto run on firstboot
 CONF=/etc/confconsole/confconsole.conf
