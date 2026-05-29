@@ -1,0 +1,20 @@
+Internal Release Engineering Docs
+==================================
+
+The files in this directory are **internal TurnKey release engineering
+documents**. They are not end-user or contributor documentation.
+
+They document the process used by the core TurnKey team to perform major
+release transitions — setting up full build infrastructure, publishing
+bootstraps, creating AMIs, and so on. They assume deep familiarity with
+TurnKey's internal infrastructure.
+
+Files
+-----
+
+- ``complete``: Full build infrastructure setup from scratch
+- ``release-checklist``: Pre-release QA checklist
+- ``transition-part1``: Build chain setup (i386 host)
+- ``transition-part2``: Build chain setup (amd64 VM) and package archive
+- ``transition-part3``: Core Amazon EC2 EBS builds
+- ``transition-part4``: Build masters from core; publish iso + ec2

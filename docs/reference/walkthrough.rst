@@ -81,7 +81,7 @@ the future it will be used to automatically generate listings for
 .. _common/mk/turnkey.mk: https://github.com/turnkeylinux/common/blob/master/mk/turnkey.mk
 .. _common/overlays/turnkey.d: https://github.com/turnkeylinux/common/tree/master/overlays/turnkey.d
 .. _common/conf/turnkey.d: https://github.com/turnkeylinux/common/tree/master/conf/turnkey.d
-.. _build process: buildprocess.rst
+.. _build process: build-process.rst
 .. _turnkey/base: https://github.com/turnkeylinux/common/blob/master/plans/turnkey/base
 .. _changelog: https://github.com/turnkeylinux-apps/core/blob/master/changelog
 .. _readme: https://github.com/turnkeylinux-apps/core/blob/master/README.rst
